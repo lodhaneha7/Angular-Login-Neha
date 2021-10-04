@@ -1,0 +1,112 @@
+dl, ol, ul{
+    list-style: none !important;
+}
+
+.bg-color{
+    background-color: #e9ecef !important;
+}
+
+.tab-container {
+	background: #344152;
+	padding: 0;
+	border: solid 1px #444;
+	height: 440px;
+	overflow: hidden;
+	width: 100%;
+}
+.nav-tabs.nav-tabs-left {
+  float: left;
+  border-right: 0;
+}
+.nav-tabs.nav-tabs-left li a {
+  margin-right: 0;
+	border-radius: 0;
+  border-right: none;
+}
+.nav-tabs.nav-tabs-left {
+  border-bottom: 0;
+  max-width: 33%;
+}
+.nav-tabs.nav-tabs-left li {
+  float: none;
+  margin: 0;
+	text-align: left;
+}
+.nav-tabs.nav-tabs-left li a,
+.nav-tabs.nav-tabs-right li a {
+  background-color: #344152;
+  color: #fff;
+}
+.nav-tabs.nav-tabs-left li a:hover,
+.nav-tabs.nav-tabs-right li a:hover {
+  background-color: rgba(255,255,255,0.9);
+  border-color: rgba(255,255,255,0.9);
+  color: #444;
+}
+.nav-tabs.nav-tabs-left li.active a,
+.nav-tabs.nav-tabs-right li.active a,
+.nav-tabs.nav-tabs-left li.active .glyphicon,
+.nav-tabs.nav-tabs-right li.active .glyphicon {
+  color: #333;
+}
+.nav-tabs.nav-tabs-left li.active a:hover,
+.nav-tabs.nav-tabs-right li.active a:hover,
+.nav-tabs.nav-tabs-left li.active .glyphicon:hover,
+.nav-tabs.nav-tabs-right li.active .glyphicon:hover {
+  color: #444;
+}
+.nav-tabs.nav-tabs-left li.active a,
+.nav-tabs.nav-tabs-right li.active a,
+.nav-tabs.nav-tabs-left li.active a:hover,
+.nav-tabs.nav-tabs-right li.active a:hover,
+.nav-tabs.nav-tabs-left li.active a:focus,
+.nav-tabs.nav-tabs-right li.active a:focus {
+  background-color: #fff;
+}
+.nav-tabs.nav-tabs-left li:not(:last-of-type),
+.nav-tabs.nav-tabs-right li:not(:last-of-type) {
+  margin-bottom: -1px;
+}
+.tab-content {
+	background: #fff;
+	height: 440px;
+	overflow-y: scroll;
+}
+.tab-content.side-tabs .tab-pane {
+  display: none;
+  padding: 20px;
+  overflow-y: auto;
+}
+.tab-content.side-tabs-left {
+  margin-left: 45px;
+}
+.tab-content.side-tabs-left .tab-pane {
+  border-radius: 0;
+}
+.tab-content.side-tabs-left .tab-pane.active {
+  display: block;
+  background-color: #fff;
+  border-color: #fff;
+  color: #333;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+.tab-content.side-tabs-right {
+  margin-right: 45px;
+}
+.tab-content.side-tabs-right .tab-pane {
+  border-radius: 4px 0 0 4px;
+}
+main > .row:not(:first-of-type) {
+  margin-top: 1.1em;
+}
+col.time,
+col.repname {
+  width: 12em;
+}
+col.did {
+  width: 9em;
+}
+.nav-tabs>li>a,.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	border: none;
+}

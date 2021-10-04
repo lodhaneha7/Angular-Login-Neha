@@ -1,0 +1,6 @@
+/* Add application styles & imports to this file! */
+
+a { cursor: pointer }
+body{
+    font-size: 0.75rem !important;
+}

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://platformapi.immdemo.net'
+  apiUrl: 'http://platformapi.immdemo.net/'
 };
 
 /*

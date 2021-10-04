@@ -1,23 +1,87 @@
+<div class="container">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark-top" *ngIf="currentUser">
+        <a class="navbar-brand" href="#"><img src="../assets/images/Fareway-logo.png" style="height: 36px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleVanillaTop"
+            aria-controls="navbarsExampleVanillaTop" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-<div class="row bg-color">
-    <div class="col-md-4" style="margin-top: 2%;">
+        <div class="collapse navbar-collapse" id="navbarsExampleVanillaTop">
+            <ul class="navbar-nav mr-auto" style="padding-left: 3%;">
+                <li class="nav-item">
+                    <a class="nav-link" href=""><i class="fa fa-map-marker"></i> {{user?.store}} | <span
+                            style="text-decoration: underline;">Change Store</span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav my-2 my-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Fareway.com |</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"> FAQ |</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"> Support |</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"> Hi {{user?.Firstname}} <i class="fa fa-angle-down"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="logout()"> Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" *ngIf="currentUser">
+        <!-- <a class="navbar-brand" href="#">Original <small>(Expand at lg)</small></a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleVanilla"
+            aria-controls="navbarsExampleVanilla" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleVanilla">
+            <ul class="navbar-nav mr-auto" style="padding-left: 3%;">
+                <li class="nav-item">
+                    {{user?.Firstname}}'s MyFareway Personal Ad for 6/2/2020 - 6/8/2020 | Shopper ID:
+                    {{user?.ShopperID}}
+                </li>
+            </ul>
+            <ul class="navbar-nav my-2 my-md-0">
+                <li class="nav-item">
+                    <a class="nav-link"><b><i class="fa fa-user" aria-hidden="true"></i>Personal Ad</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><b><i class="fa fa-clipboard-list"></i>MyFareway List</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><b><i class="fas fa-wallet"></i>Your Savings To Date $1.00</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><b><i class="fa fa-angle-down"></i></b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row bg-color" style="margin-right: 0px !important; margin-left: 0px !important;">
+        <div class="col-md-4" style="margin-top: 2%;">
             <h3>MY ACCOUNT</h3>
-    </div>
-    <div  class="col-md-8" style="margin-top: 4%;">
-        <h5>ACCOUNT INFORMATION <i class="fa fa-edit"></i></h5>
-        <ul style="list-style: none;">
-            <li><b>Shopper ID: </b>4804524498</li>
-            <br>
-            <li><b>Email Address: </b>kprajapati@epsilonium</li>
-        </ul>
-        <h5>PERSONAL INFORMATION <i class="fa fa-edit"></i></h5>
-        <ul style="list-style: none;">
-            <li><b>Name: </b>4804524498</li>
-            <li><b>Phone: </b>kprajapati@epsilonium</li>
-            <li><b>Birth Month/Year: </b>09/1993</li>
-            <li><b>Address 1: </b>tempe</li>
-            <li><b>Address 2: </b></li>
-            <li><b>City, State, Zip Code: </b>tempe1, Indiana, 55557</li>
-        </ul>
+        </div>
+        <div class="col-md-8" style="margin-top: 4%;">
+            <h5>ACCOUNT INFORMATION <i class="fa fa-edit"></i></h5>
+            <ul style="list-style: none;">
+                <li><b>Shopper ID: </b>{{user?.ShopperID}}</li>
+                <br>
+                <li><b>Email Address: </b>{{user?.Email}}</li>
+            </ul>
+            <h5>PERSONAL INFORMATION <i class="fa fa-edit"></i></h5>
+            <ul style="list-style: none;">
+                <li><b>Name: </b> {{user?.Firstname}} &nbsp; {{user?.Lastname}}</li>
+                <li><b>Phone: </b>{{user?.Phone}}</li>
+                <li><b>Birth Month/Year: </b>{{user?.DOB}}</li>
+                <li><b>Address 1: </b>{{user?.Address1}}</li>
+                <li><b>Address 2: </b></li>
+                <li><b>City, State, Zip Code: </b>{{user?.City}},{{user?.StateName}},{{user?.Zip}}</li>
+            </ul>
+        </div>
     </div>
 </div>

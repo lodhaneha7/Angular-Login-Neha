@@ -1,66 +1,6 @@
 
     <!-- nav -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark-top" *ngIf="currentUser">
-        <a class="navbar-brand" href="#"><img src="../assets/images/Fareway-logo.png" style="height: 36px;"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleVanillaTop"
-            aria-controls="navbarsExampleVanillaTop" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExampleVanillaTop">
-            <ul class="navbar-nav mr-auto" style="padding-left: 3%;">
-                <li class="nav-item">
-                    <a class="nav-link" href=""><i class="fa fa-map-marker"></i> Store #509, 109, East Marion Street, Manchester, IA | <span style="text-decoration: underline;">Change Store</span></a>
-                </li>
-            </ul>
-            <ul class="navbar-nav my-2 my-md-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="">Fareway.com |</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"> FAQ |</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"> Support |</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"> Hi Kamlesh <i class="fa fa-angle-down"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" (click) = "logout()"> Logout</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" *ngIf="currentUser">
-        <!-- <a class="navbar-brand" href="#">Original <small>(Expand at lg)</small></a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleVanilla"
-            aria-controls="navbarsExampleVanilla" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExampleVanilla">
-            <ul class="navbar-nav mr-auto" style="padding-left: 3%;">
-                <li class="nav-item">
-                    Kamlesh's MyFareway Personal Ad for 6/2/2020 - 6/8/2020 | Shopper ID: 4804524498
-                </li>
-            </ul>
-            <ul class="navbar-nav my-2 my-md-0">
-                <li class="nav-item">
-                    <a class="nav-link"><b><i class="fa fa-user" aria-hidden="true"></i>Personal Ad</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><b><i class="fa fa-clipboard-list"></i>MyFareway List</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><b><i class="fas fa-wallet"></i>Your Savings To Date $1.00</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><b><i class="fa fa-angle-down"></i></b></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+ 
     <!-- main app container -->
     <div class="container">
         <router-outlet></router-outlet>

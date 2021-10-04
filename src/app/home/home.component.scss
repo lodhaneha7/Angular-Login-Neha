@@ -1,3 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:700&display=swap');
+
+.bg-dark {
+    background-color: #e9ecef !important;
+    border-bottom: 5px solid red;
+}
+.bg-color{
+    background-color: #e9ecef !important;
+}
+
+.bg-dark-top{
+    background-color: #ffffff !important;
+    // border-bottom: 5px solid red;
+}
+h1, h3 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 700;
+}
+
+
+.navbar {
+    padding: 0 !important;
+}
+
+/*nothing below this point is needed*/
+body {
+    color: #333;
+    
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(0 0 0) !important;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(0 0 0) !important;
+}
+.navbar-dark .navbar-nav .nav-link:active {
+    color: rgb(0 0 0) !important;
+}
+
+dl, ol, ul{
+    list-style: none !important;
+}
 dl, ol, ul{
     list-style: none !important;
 }
@@ -110,3 +153,6 @@ col.did {
 .nav-tabs>li>a,.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
 	border: none;
 }
+
+
+
